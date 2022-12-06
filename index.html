@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Google</title>
+    <link rel="shortcut icon" href="favicon/google_icon/favicon.ico">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Font Awesome Librarry-->
+    <link rel='stylesheet' type='text/css' media='screen' href='libs/fontawsome/css/all.min.css'>
+</head>
+<style>
+    body{
+        font-family: Arial, sans-serif, "FontAwesome";
+    }
+    h1{
+        text-align: center;
+        font-size: 100px;
+    }
+    .blue{
+        color:#4285F4;
+    }
+    .red{
+        color: #DB4437;
+    }
+    .yellow{
+        color: #F4B400;
+    }
+    .green{
+        color:green;
+    }
+    .rotate{
+        display:inline-block;
+        transform:rotate(-20deg);
+    }
+    form{
+        width: 40%;
+        margin: auto;
+        
+    }
+    .search_div{
+        position: relative;
+        height: 44px;
+    }
+    input{
+        height: 100%;
+        width: 100%;
+        border: 1px solid #dfe1e5;
+        border-radius: 25px;
+        outline: 0;
+        padding-inline-end: 44px;
+        padding-inline-start: 52px;
+    }
+    input:hover{
+        box-shadow: 0 1px 6px 0 #20212447;
+    }
+    input::placeholder{
+        color: #000;
+       font-size: 16px;
+       font-weight:500;
+    }
+    .position{
+        position: absolute;
+        top: 25%;
+    }
+    i{
+        font-style: normal;
+        left: 5%;
+        color: #9aa0a6;
+    }
+    img{
+        width: 20px;
+        right: 5%;
+    }
+    @media (max-width:600px) {
+        form{
+            width: 90%!important;
+        }
+        h1{
+            font-size: 50px!important;
+        }
+    }
+</style>
+<body>
+    <h1>
+        <span class="blue">G</span>
+        <span class="red rotate">o</span>
+        <span class="yellow rotate">o</span>
+        <span class="blue">g</span>
+        <span class="green">l</span>
+        <span class="red rotate">e</span>
+    </h1>
+    <form>
+        <div class="search_div">
+            <input type="search" id="gsearch" name="gsearch" placeholder="Search Google or type a URL">
+            <i class="fa-light fa-magnifying-glass position"></i>
+            <img class="position" src="favicon/camera_icon/favicon.ico" alt="camera_icon">
+        </div>
+    </form>
+</body>
+</html>
